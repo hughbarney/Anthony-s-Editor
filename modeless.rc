@@ -1,0 +1,49 @@
+Sample Configuration File
+EMACS-like Interface with ANSI Function Keys
+Anthony's Editor January 93
+Public Domain 1991, 1993 by Anthony Howe.  No warranty.
+
+#.help_off
+.help_text
+Left, down, up, right   arrow keys      Insert                  typed keys
+Word left and right     ^A  ^D          Literal escape          ^V
+Page down and up        ^N  ^P          Delete left and right   BACKSPACE  ^X
+Front and end of line   ^F  ^E          Block on and off        F2
+Top and bottom of file  ^T  ^B          Cut block, paste scrap  F3  F4
+Macros                  ^K^M            File read and write     ^R  ^W
+Redraw                  ^L              Undo                    ^U
+Help on and off         F1              Version, quit           ^K^V  ^C  ^K^C
+.end
+.literal       ^V
+.cursor_up     ^[[A
+.cursor_down   ^[[B
+.cursor_left   ^[[D
+.cursor_right  ^[[C
+.page_up       ^P
+.page_down     ^N
+.word_left     ^A
+.word_right    ^D
+.line_left     ^F
+.line_right    ^E
+.file_top      ^T
+.file_bottom   ^B
+.delete_left   ^H
+.delete_right  ^X
+.help          ^[f1
+.block         ^[f2
+.cut           ^[f3
+.paste         ^[f4
+.undo          ^U
+.file_read     ^R
+.file_write    ^W
+.redraw                ^L
+.quit_ask      ^C
+.quit          ^K^C
+.quit          ^K^X
+.show_version  ^K^V
+.macro         ^K^M
+.macro_define
+.macro_define
+.macro_define
+.macro_define
+.macro_define

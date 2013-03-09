@@ -1,0 +1,67 @@
+Sample Configuration File
+VI-like Interface
+Anthony's Editor January 93
+Public Domain 1991, 1993 by Anthony Howe.  No warranty.
+
+#.help_off
+.help_text
+Left, down, up, right   h  j  k  l      Insert on, off, erase   i  ESC  ERASE
+Word left and right     H  L            Literal escape          ^V
+Page down and up        J  K            Delete left and right   X  x
+Start and end of line   [  ]            Block on and off        SPACE
+Top and bottom of file  T  B            Cut block, paste scrap  C  P
+Macros                  M               File read and write     R  W
+Redraw                  r               Undo                    u
+Help on and off         ?               Version, quit           V  q  Q
+.end
+.stty_erase
+.show_version  V
+.show_version  :ver
+.macro         M
+.macro         :map
+.macro_define
+.macro_define
+.macro_define
+.macro_define
+.macro_define  D       \s]C
+.macro_define  dd      [\sjC
+.macro_define  A       ]i
+.macro_define  a       li
+.macro_define  dw      \swC
+.macro_define  cw      dwi
+.macro_define  o       [ji\n^[ki
+.macro_define  O       [ki\n^[ki
+.macro_define  y       CP
+.cursor_up     k
+.cursor_down   j
+.cursor_left   h
+.cursor_right  l
+.page_up       K
+.page_down     J
+.page_up       ^B
+.page_down     ^F
+.word_left     H
+.word_right    L
+.word_left     b
+.word_right    w
+.line_left     [
+.line_right    ]
+.line_left     0
+.line_right    $
+.file_top      T
+.file_bottom   B
+.delete_left   X
+.delete_right  x
+.insert_enter  i
+.insert_exit   ^[
+.literal       ^V
+.block         \s
+.cut           C
+.paste         P
+.undo          u
+.help          ?
+.file_write    W
+.file_read     R
+.redraw                r
+.quit_ask      q
+.quit          Q
